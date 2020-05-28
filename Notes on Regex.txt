@@ -1,1 +1,33 @@
+Note: Regex is enclosed within /Regex/
 
+The [aiu] is the character class that will only match the characters "a", "i", or "u"
+[0] - g, i , and all the operators are called flags in regex.
+[1] /g: global - for finding and returning the same word repeating multiple times in a string.
+[2] /i: ignore case - For finding the word ** while ignoring the case of the letters in the string **
+[3] /gi - for finding the expressions using both the properties using [1] and [2]
+[4] . - Dot opreator: It is used to 
+[5] .match() -  to check for your regex in the given string.
+[6] .test() - to test for your regex in the given string [ returns true/ False ]
+[7] to match words with similar expressions, like hug, hum, hurt - /hu./
+[8] The [aiu] is the character class that will only match the characters "a", "i", or "u".
+[9] [alpha1 - alpha2] - to match regex in string from a through e.
+[10] [a-z0-9] - to match regex in string from a through z and from 0 to 9.
+[11] ^ - To create a negated character set, you place a caret character (^) after the opening bracket and before the characters you do not want to match.
+[12] + operator - to look for characters that occur one or more times
+[13] * operator - that matches characters that occur zero or more times.
+[14] /t[a-z]*i/ : titani, use ? [Lazy matching] as /t[a-z]*?i to match the regex in the string till "ti".
+[15] ^ caret character to search for pattern in the starting of the string.
+[16] $ used to search for pattern at the end of the string.
+[17] The closest character class in JavaScript to match the alphabet is \w. This shortcut is equal to [A-Za-z0-9_]. This character class matches upper and lowercase letters plus numbers. Note, this character class also includes the underscore character (_).
+[18]\w = [A-Za-z0-9_]
+[19]\W = [^A-Za-z0-9_]
+[20]\d - look out for digits [0-9]
+[21]\D = [^0-9]
+[22]\s = looks out for whitespaces
+[23]\S - This pattern will not match whitespace, carriage return, tab, form feed, and new line characters. You can think of it being similar to the character class [^ \r\t\f\n\v].
+[24]{} - quantify specifiers to identify the lower and upper bound of pattern in a string.
+[25]favou?rite and favo?rite = identifies as colou?r and colo?r
+[26]lookaheads: positive lookahead and negative lookahead.
+[27]A positive lookahead is used as (?=...) where the ... is the required part that is not matched.
+[28]A negative lookahead is used as (?!...) where the ... is the pattern that you do not want to be there.
+[29].replace() 
